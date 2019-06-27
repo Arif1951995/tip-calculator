@@ -1,0 +1,55 @@
+
+body {
+    background-image:  linear-gradient(to right, #719933, #14cfe4);
+}
+.content {
+    width: 40%;
+
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    text-align: center;
+    background-image: linear-gradient(to right, #80ffff, #ff80c0);
+}
+.perfect, .good, .ok, .bad {
+    /* border: 2px solid black; */
+    width: 40%;
+    margin: 10px auto;
+    display: flex;
+justify-content: space-between;
+}
+
+label, button {
+    display: block;
+   
+}
+.calcBtn, .resetBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 30px;
+    font-size: 1.5em;
+    border: none;
+    background-color: aquamarine;
+    cursor: pointer;
+    
+}
+.peoplelabel {
+    margin-top: 10px;
+}
+.result {
+    visibility: hidden;
+}
+@media (max-width: 768px) {
+    .content {
+    width: 60%;
+
+    }
+
+}
+
+@media (max-width: 425px) {
+    .content {
+        width: 100%;
+
+    }
+
+}

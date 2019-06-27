@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="content">
+            <header>
+                    <h1>Tip Calculator</h1>
+                </header>
+                <main>
+                    <label for="amountInput">$
+                        <input id="amount" type="text" placeholder="total amount"> Amount
+                    </label>
+                    <h3>How was the service?</h3>
+                       <div class="perfect">
+                            <label for="perfect">
+                                    it was perfect (25%)
+                                </label>
+                                <input id="perfect" name="service" data-amount='.25' type="radio">
+
+                       </div>
+                       <div class="good">
+                            <label for="good">
+                                    it was good (20%)
+                            </label>
+                            <input name="service" id="good" data-amount='.20' type="radio">
+
+                       </div>
+                       <div class="ok">
+                            <label for="ok">
+                                    it was ok (10%)
+                            </label>
+                            <input id="ok" name="service" data-amount='.10' type="radio">
+
+                       </div>
+                       <div class="bad">
+                            <label for="bad">
+                                    it was bad (5%)
+                            </label>
+                            <input id="bad" data-amount='.5' name="service" type="radio">
+
+                       </div>
+                <label class="peoplelabel" for="people">How many are sharing the bill?</label>
+                <input type="text" id="people" placeholder="quantity of people ">
+                    <button class="calcBtn">Calculate</button>
+                    <div class="result">
+                        <h3><sup>$</sup><span class="resultAmount"></span> on each </h3>
+                        <button class="resetBtn">Reset</button>
+                    </div>
+                </main>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
